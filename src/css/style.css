@@ -1,0 +1,109 @@
+:root {
+    --main: rgb(25, 36, 25);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+}
+
+body {
+    background-color: #caeab4;;
+    overflow-x: hidden;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.3rem;
+    text-align: center;
+    color: var(--main);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    padding: 10px 5px;
+
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+}
+
+header ul li.active,
+header ul li:hover {
+    background-color: var(--main);
+    border-radius: 15px;
+}
+header ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo {
+    color: white;
+}
+
+.imgs {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+    max-width: 1080px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+}
+
+.banner {
+    height: 100px;
+    position: relative;
+    background: var(--main);
+}
+
+section {
+    position: relative;
+    width: 100%;
+    background-color: var(--main);
+    color: white;
+    padding: 5px 100px;
+}
+
+.container {
+    position: relative;
+    width: 90vw;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    box-shadow: 0 0 20px 0px black;
+}
